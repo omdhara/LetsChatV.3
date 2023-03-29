@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Kwitter_room.css">
+
+</head>
+<body style="background-color: rgba(0, 105, 252, 0.945); font-family: 'Times New Roman', Times, serif;">
+<div class="container">
+    <br>
+ <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+        <br><br>
+		<h1 style=" font-size: x-large; font-family: 'Times New Roman', Times, serif; color:white;" id="title_1">	
+			
+		</h1>
+        <hr style="background-color:navy; height: 3px; border-radius: 20px;">
+		<h3 class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>To Add Room:</label>
+            <br>
+
+		</div>
+		<button onclick="addRoom()" class="btn btn-success">#Add Room</button>
+        <br><br>
+		<input type="text" id="room_name" placeholder="Enter your room name here" class="form-control">
+		<hr style=" background-color:rgb(0, 255, 255); color:rgb(0, 255, 255); height:1.7px;">
+		<h3 class="color_white">#TRENDING ROOMS</h3>
+		<hr style=" background-color:rgb(0, 255, 255); color:rgb(0, 255, 255); height:1.6px;">
+		<div class="trending_room">
+
+
+		</div>
+
+		
+	</center>
+	
+</div>
+
+
+	
+<script src="Kwitter_room.js"></script>
+</body>
+</html>

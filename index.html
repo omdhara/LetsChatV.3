@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lets Chat</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Kwitter.css">
+
+</head>
+<body style="font-family:'Times New Roman', Times, serif;">
+    <center>
+         <h1>Lets Chat! <img src="https://w7.pngwing.com/pngs/397/178/png-transparent-computer-icons-message-chat-icon-miscellaneous-text-online-chat.png"></h1>
+         <hr>
+         <br>
+         <div id="Login_div" class="col-lg-4 col-md-6 col-sm-6 col-xs-10">
+            <h3>Welcome to our app, Please start with the login proccess</h3>
+            <br>
+            <h4>User Name : </h4>
+            <input type="text" class="form-control" placeholder="Enter your name here." id="userName">
+            <br>
+            <button onclick="addUser()" style="height: 34px; width: 50px;border-radius:10px; background-color:rgba(44, 52, 210, 0.779);">Login</button>
+            <br><br>
+        </div>
+         <br>
+         
+    </center>
+</body>
+<script src="Kwitter.js"></script>
+</html>
